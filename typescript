@@ -1,0 +1,1463 @@
+Script started on Sun Oct 10 15:51:16 2021
+[0m[38;5;242m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                                  [0m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[49m[34m[0m[34m[49m[39m[38;5;242m───────────────────────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m                                                                                                              [0m[38;5;242m[49m[39m[38;5;242m─╯[0m[38;5;242m[49m[39m[27m[24m[2C[6n^[[A[As[?25l8[0m[49m[39m[27m[24m[J
+[[33mWARNING[39m]: Console output during zsh initialization detected.
+
+When using Powerlevel10k with instant prompt, console output during zsh
+initialization may indicate issues.
+
+You can:
+
+  - [1mRecommended[0m: Change [1m~/.zshrc[0m so that it does not perform console I/O
+    after the instant prompt preamble. See the link below for details.
+
+    * You [1mwill not[0m see this error message again.
+    * Zsh will start [1mquickly[0m and prompt will update [1msmoothly[0m.
+
+  - Suppress this warning either by running [1mp10k configure[0m or by manually
+    defining the following parameter:
+
+      [33mtypeset[39m -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+    * You [1mwill not[0m see this error message again.
+    * Zsh will start [1mquickly[0m but prompt will [1mjump down[0m after initialization.
+
+  - Disable instant prompt either by running [1mp10k configure[0m or by manually
+    defining the following parameter:
+
+      [33mtypeset[39m -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+    * You [1mwill not[0m see this error message again.
+    * Zsh will start [1mslowly[0m.
+
+  - Do nothing.
+
+    * You [1mwill[0m see this error message every time you start zsh.
+    * Zsh will start [1mquickly[0m but prompt will [1mjump down[0m after initialization.
+
+For details, see:
+]8;;https://github.com/romkatv/powerlevel10k/blob/master/README.md#instant-prompthttps://github.com/romkatv/powerlevel10k/blob/master/README.md#instant-prompt]8;;
+
+[33m-- console output produced during zsh initialization follows --[39m
+
+[oh-my-zsh] plugin 'git_collaborate' not found
+]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico
+dotenv: found '.env' file. Source it? ([Y]es/[n]o/[a]lways/n[e]ver) 
+]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                                  [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;242m[49m[39m
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?12l[?25h[?2004h[[As[?1l>[?25l[?2004l[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m [As[K[?12l[?25h
+]2;[As]1;[Aszsh: bad pattern: [As
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[As[?25l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [As[K[?12l[?25h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[Asscriptcd .. script[As   scripts[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m scripts[K[?12l[?25h
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/scripts]2;noah@Noahs-MBP-2]1;..n-ico/scripts]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/scripts[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mscripts[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hscripts[As    scriptcd .. find . -name '*.js' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.js' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[K[?12l[?25h
+]2;find . -name '*.js' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/scripts]2;noah@Noahs-MBP-2]1;..n-ico/scripts]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/scripts[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mscripts[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hfind . -name '*.js' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"onelyToken/DonutStone/g" [25D;onelyToken/DonutStone/g"[24DonelyToken/DonutStone/g" [25DlonelyToken/DonutStone/g"[24D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1ConutStone/g" [13DdonutStone/g"[12D[1C[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.js' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[K[11D[?12l[?25h
+]2;find . -name '*.js' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/scripts]2;noah@Noahs-MBP-2]1;..n-ico/scripts]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/scripts[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mscripts[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h.../scr[6nipts[1m/[0m[0m/deploy_token                  e  e§   sr[6nc[1m/[0m[0m [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ../src[K[?12l[?25h
+]2;../src]1;../src[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src]2;noah@Noahs-MBP-2]1;..token-ico/src]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255msrc[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h../srcfind . -name '*.js' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[1C[1C[1C' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g" [60D' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g" [60Dt' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[59Ds' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[59Dx' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[59D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[K[26D[?12l[?25h
+]2;find . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src]2;noah@Noahs-MBP-2]1;..token-ico/src]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255msrc[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m─────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255msrc[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25hfind . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"onutStone/g" [13DDonutStone/g"[12DonelyToken/DonutStone/g" [25D:onelyToken/DonutStone/g"[24DonelyToken/DonutStone/g" [25DLonelyToken/DonutStone/g"[24D[1C[1C[1C[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[K[21D[?12l[?25h
+]2;find . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src]2;noah@Noahs-MBP-2]1;..token-ico/src]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255msrc[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hccd src   
+[J[1;31martifacts[0m/   [J[1;31mcomponents[0m/  [J[1;31mdapp[0m/        [J[1;31mjs[0m/          [J[1;31mstyles[0m/      [J[1;31mtypes[0m/     [J[A[0m[27m[24m[0m[27m[24m[39m[49m[2Ccd[K[108C[0m[49m[39m[38;5;242m─╯[39m[0m[27m[24m[39m[49m[109Dtypes[1m/[0m[0m [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m cd types[K[?12l[?25h
+]2;cd types]1;cd[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types]2;noah@Noahs-MBP-2]1;..ico/src/types]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m───────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m───────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25hcd types[8Dfind . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[78Dcd types                                                                      [70D[8Dfind . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[78Dcd types                                                                      [70D[8Dfind . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[1C[1C' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g" [60D[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.ts' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[K[59D[?12l[?25h
+]2;find . -name '*.ts' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types]2;noah@Noahs-MBP-2]1;..ico/src/types]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m───────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m───────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25hfind . -name '*.ts' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[77Dcd types                                                                     [69D[8Dfind . -name '*.tsx' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[78Dcd types                                                                      [70D[8Dfind . -name '*.ts' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"onutStone/g" [13DdonutStone/g"[12DonelyToken/donutStone/g" [25D;onelyToken/donutStone/g"[24DonelyToken/donutStone/g" [25DlonelyToken/donutStone/g"[24D[1C[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.ts' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[K[23D[?12l[?25h
+]2;find . -name '*.ts' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types]2;noah@Noahs-MBP-2]1;..ico/src/types]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m───────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m───────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25hmman xargg s[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m man xargs[K[?12l[?25h
+]2;man xargs]1;man[?1049h[?1h=[m
+XARGS(1)                  BSD General Commands Manual                 XARGS(1)[m
+[m
+[1mNAME[0m[m
+     [1mxargs[0m -- construct argument list(s) and execute utility[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mxargs[0m [[1m-0opt[0m] [[1m-E[0m [4meofstr[24m] [[1m-I[0m [4mreplstr[24m [[1m-R[0m [4mreplacements[24m]] [[1m-J[0m [4mreplstr[24m] [[1m-L[0m [4mnumber[24m] [[1m-n[0m [4mnumber[24m [[1m-x[0m]][m
+           [[1m-P[0m [4mmaxprocs[24m] [[1m-s[0m [4msize[24m] [[4mutility[24m [[4margument[24m [4m...[24m]][m
+[m
+[1mDESCRIPTION[0m[m
+     The [1mxargs[0m utility reads space, tab, newline and end-of-file delimited strings from the standard[m
+     input and executes [4mutility[24m with the strings as arguments.[m
+[m
+     Any arguments specified on the command line are given to [4mutility[24m upon each invocation, followed by[m
+     some number of the arguments read from the standard input of [1mxargs[0m.  The utility is repeatedly[m
+     executed until standard input is exhausted.[m
+[m
+     Spaces, tabs and newlines may be embedded in arguments using single (`` ' '') or double (``"'')[m
+     quotes or backslashes (``\'').  Single quotes escape all non-single quote characters, excluding[m
+     newlines, up to the matching single quote.  Double quotes escape all non-double quote characters,[m
+     excluding newlines, up to the matching double quote.  Any single character, including newlines,[m
+     may be escaped by a backslash.[m
+[m
+     The options are as follows:[m
+[m
+     [1m-0[0m      Change [1mxargs[0m to expect NUL (``\0'') characters as separators, instead of spaces and new-[m
+             lines.  This is expected to be used in concert with the [1m-print0[0m function in find(1).[m
+[m
+     [1m-E[0m [4meofstr[24m[m
+             Use [4meofstr[24m as a logical EOF marker.[m
+[m
+     [1m-I[0m [4mreplstr[24m[m
+             Execute [4mutility[24m for each input line, replacing one or more occurrences of [4mreplstr[24m in up to[m
+             [4mreplacements[24m (or 5 if no [1m-R[0m flag is specified) arguments to [4mutility[24m with the entire line[m
+             of input.  The resulting arguments, after replacement is done, will not be allowed to grow[m
+             beyond 255 bytes; this is implemented by concatenating as much of the argument containing[m
+             [4mreplstr[24m as possible, to the constructed arguments to [4mutility[24m, up to 255 bytes.  The 255[m
+             byte limit does not apply to arguments to [4mutility[24m which do not contain [4mreplstr[24m, and fur-[m
+             thermore, no replacement will be done on [4mutility[24m itself.  Implies [1m-x[0m.[m
+[m
+     [1m-J[0m [4mreplstr[24m[m
+             If this option is specified, [1mxargs[0m will use the data read from standard input to replace[m
+             the first occurrence of [4mreplstr[24m instead of appending that data after all other arguments.[m
+             This option will not affect how many arguments will be read from input ([1m-n[0m), or the size[m
+             of the command(s) [1mxargs[0m will generate ([1m-s[0m).  The option just moves where those arguments[m
+             will be placed in the command(s) that are executed.  The [4mreplstr[24m must show up as a dis-[m
+             tinct [4margument[24m to [1mxargs[0m.  It will not be recognized if, for instance, it is in the middle[m
+             of a quoted string.  Furthermore, only the first occurrence of the [4mreplstr[24m will be[m
+             replaced.  For example, the following command will copy the list of files and directories[m
+             which start with an uppercase letter in the current directory to [4mdestdir[24m:[m
+[m
+                   /bin/ls -1d [A-Z]* | xargs -J % cp -rp % destdir[m
+[m
+:[K[K:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types]2;noah@Noahs-MBP-2]1;..ico/src/types]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/src/types[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 2m 18s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/src/[1m[38;5;254m[44m[38;5;255mtypes[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 2m 18s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25h.../../te[6nst[1m/[0m[0m [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m ../../test[K[?12l[?25h
+]2;../../test]1;../../test[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test]2;noah@Noahs-MBP-2]1;..oken-ico/test]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h../../test[10Dman xargs [9Dfind . -name '*.ts' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[1C[1Cs' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g" [61Djs' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[60D[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.js' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"[K[60D[?12l[?25h
+]2;find . -name '*.js' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test]2;noah@Noahs-MBP-2]1;..oken-ico/test]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hfind . -name '*.js' -print0 | xargs -0 sed -i "" "s/lonelyToken/donutStone/g"onutStone/g" [13DonutStone/g" [13DDonutStone/g"[12D/DonutStone/g"[13D[1ConelyToken/DonutStone/g" [25D:onelyToken/DonutStone/g"[24DonelyToken/DonutStone/g" [25D:onelyToken/DonutStone/g"[24DonelyToken/DonutStone/g" [25DLonelyToken/DonutStone/g"[24D[1C[1C[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m find . -name '*.js' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"[K[22D[?12l[?25h
+]2;find . -name '*.js' -print0 | xargs -0 sed -i "" "s/LonelyToken/DonutStone/g"]1;find[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test]2;noah@Noahs-MBP-2]1;..oken-ico/test]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test]2;noah@Noahs-MBP-2]1;..oken-ico/test]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test]2;noah@Noahs-MBP-2]1;..oken-ico/test]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test]2;noah@Noahs-MBP-2]1;..oken-ico/test]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico/test[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mtest[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hccd ../..[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m cd ../..[K[?12l[?25h
+]2;cd ../..]1;cd[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects]2;noah@Noahs-MBP-2]1;~/projects]7;file://Noahs-MBP-2/Users/noah/projects[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mprojects[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[49m[34m[0m[34m[49m[39m[38;5;242m──────────────────────────────────────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hccd ap  dapp-token-ico[1m/[0m[0m [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m cd dapp-token-ico[K[?12l[?25h
+]2;cd dapp-token-ico]1;cd[6ndotenv: found '.env' file. Source it? ([Y]es/[n]o/[a]lways/n[e]ver) y
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hnnpm run deb v[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m npm run dev[K[?12l[?25h
+]2;npm run dev]1;npm
+> basic-erc20-token@0.0.1 dev
+> vite
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[36m[39m
+[36m  vite v2.5.10[39m[32m dev server running at:[39m
+[32m[39m
+  > Local:    [36mhttp://localhost:[1m3000[22m/[39m
+  > Network:  [36mhttp://192.168.0.6:[1m3000[22m/[39m
+[36m[39m
+[36m  ready in 1649ms.[39m
+[36m[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:18:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./artifacts/contracts/DonutStone.sol/DonutStone.json" from "src/MainCard.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/Users/noah/projects/dapp-token-ico/src/MainCard.tsx[39m
+[33m  20 |  import { toast } from "react-hot-toast";[39m
+[33m  21 |  import { useQuery } from "react-query";[39m
+[33m  22 |  import DonutStoneArtifacts from "./artifacts/contracts/DonutStone.sol/DonutStone.json";[39m
+[33m     |                                   ^[39m
+[33m  23 |  import DonutStoneCrowdsaleArtifacts from "./artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json";[39m
+[33m  24 |  import logger from "./logger";[39m
+      at formatError (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:50163:46)
+      at TransformContext.error (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:50159:19)
+      at normalizeUrl (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:75881:26)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      at async TransformContext.transform (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:76016:57)
+      at async Object.transform (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:50373:30)
+      at async transformRequest (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:65414:29)
+      at async viteTransformMiddleware (/Users/noah/projects/dapp-token-ico/node_modules/vite/dist/node/chunks/dep-36bf480c.js:65542:32)
+
+[1m[33mwarn[39m[22m - You have enabled the JIT engine which is currently in preview.
+[1m[33mwarn[39m[22m - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
+
+[35m🌼 DaisyUI components 1.14.0[0m [0m https://github.com/saadeghi/daisyui
+  [32m✔︎ Including:[0m [0m base, components, themes[21], utilities
+  
+
+[35m🌼 DaisyUI components 1.14.0[0m [0m https://github.com/saadeghi/daisyui
+  [32m✔︎ Including:[0m [0m base, components, themes[21], utilities
+  
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Duplicate identifier 'LibraryManagedAttributes'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/node_modules/@types/react-dom/node_modules/@types/react/index.d.ts:[33m3092[39m:[33m14[39m
+
+  [0m [90m 3090 |[39m         [90m// We can't recurse forever because `type` can't be self-referential;[39m[0m
+  [0m [90m 3091 |[39m         [90m// let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3092 |[39m         type [33mLibraryManagedAttributes[39m[33m<[39m[33mC[39m[33m,[39m [33mP[39m[33m>[39m [33m=[39m [33mC[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m[0m
+  [0m [90m      |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3093 |[39m             [33m?[39m [33mT[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m[0m
+  [0m [90m 3094 |[39m                 [33m?[39m [33mReactManagedAttributes[39m[33m<[39m[33mU[39m[33m,[39m [33mP[39m[33m>[39m[0m
+  [0m [90m 3095 |[39m                 [33m:[39m [33mReactManagedAttributes[39m[33m<[39m[33mT[39m[33m,[39m [33mP[39m[33m>[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Subsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/node_modules/@types/react-dom/node_modules/@types/react/index.d.ts:[33m3156[39m:[33m13[39m
+
+  [0m [90m 3154 |[39m             iframe[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mIframeHTMLAttributes[39m[33m<[39m[33mHTMLIFrameElement[39m[33m>[39m[33m,[39m [33mHTMLIFrameElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 3155 |[39m             img[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mImgHTMLAttributes[39m[33m<[39m[33mHTMLImageElement[39m[33m>[39m[33m,[39m [33mHTMLImageElement[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3156 |[39m             input[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mInputHTMLAttributes[39m[33m<[39m[33mHTMLInputElement[39m[33m>[39m[33m,[39m [33mHTMLInputElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3157 |[39m             ins[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mInsHTMLAttributes[39m[33m<[39m[33mHTMLModElement[39m[33m>[39m[33m,[39m [33mHTMLModElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 3158 |[39m             kbd[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mHTMLAttributes[39m[33m<[39m[33mHTMLElement[39m[33m>[39m[33m,[39m [33mHTMLElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 3159 |[39m             keygen[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mKeygenHTMLAttributes[39m[33m<[39m[33mHTMLElement[39m[33m>[39m[33m,[39m [33mHTMLElement[39m[33m>[39m[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Duplicate identifier 'LibraryManagedAttributes'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/node_modules/@types/react/index.d.ts:[33m3068[39m:[33m14[39m
+
+  [0m [90m 3066 |[39m         [90m// We can't recurse forever because `type` can't be self-referential;[39m[0m
+  [0m [90m 3067 |[39m         [90m// let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3068 |[39m         type [33mLibraryManagedAttributes[39m[33m<[39m[33mC[39m[33m,[39m [33mP[39m[33m>[39m [33m=[39m [33mC[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m[0m
+  [0m [90m      |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3069 |[39m             [33m?[39m [33mT[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m[0m
+  [0m [90m 3070 |[39m                 [33m?[39m [33mReactManagedAttributes[39m[33m<[39m[33mU[39m[33m,[39m [33mP[39m[33m>[39m[0m
+  [0m [90m 3071 |[39m                 [33m:[39m [33mReactManagedAttributes[39m[33m<[39m[33mT[39m[33m,[39m [33mP[39m[33m>[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Cannot find module './artifacts/contracts/DonutStone.sol/DonutStone.json' or its corresponding type declarations.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/ICOToken.tsx:[33m8[39m:[33m33[39m
+
+  [0m [90m  6 |[39m [36mimport[39m { useQuery } [36mfrom[39m [32m"react-query"[39m[33m;[39m[0m
+  [0m [90m  7 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m [33mDonutStoneArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStone.sol/DonutStone.json"[39m[33m;[39m[0m
+  [0m [90m    |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m [36mimport[39m [33mDonutStoneCrowdsaleArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json"[39m[33m;[39m[0m
+  [0m [90m 10 |[39m [36mimport[39m logger [36mfrom[39m [32m"./logger"[39m[33m;[39m[0m
+  [0m [90m 11 |[39m [36mimport[39m { [33mDonutStone[39m } [36mfrom[39m [32m"./types/DonutStone"[39m[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Cannot find module './artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json' or its corresponding type declarations.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/ICOToken.tsx:[33m9[39m:[33m42[39m
+
+  [0m [90m  7 |[39m[0m
+  [0m [90m  8 |[39m [36mimport[39m [33mDonutStoneArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStone.sol/DonutStone.json"[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mDonutStoneCrowdsaleArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json"[39m[33m;[39m[0m
+  [0m [90m    |[39m                                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 10 |[39m [36mimport[39m logger [36mfrom[39m [32m"./logger"[39m[33m;[39m[0m
+  [0m [90m 11 |[39m [36mimport[39m { [33mDonutStone[39m } [36mfrom[39m [32m"./types/DonutStone"[39m[33m;[39m[0m
+  [0m [90m 12 |[39m [36mimport[39m { [33mDonutStoneCrowdsale[39m } [36mfrom[39m [32m"./types/DonutStoneCrowdsale"[39m[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Property 'closingTime' does not exist on type 'DonutStoneCrowdsale'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/ICOToken.tsx:[33m104[39m:[33m10[39m
+
+  [0m [90m 102 |[39m         [33m.[39m[36mcatch[39m(logger[33m.[39merror)[33m;[39m[0m
+  [0m [90m 103 |[39m       contract[0m
+  [0m[31m[1m>[22m[39m[90m 104 |[39m         [33m.[39mclosingTime()[0m
+  [0m [90m     |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 105 |[39m         [33m.[39mthen((time) [33m=>[39m setClosingTime([33mBigNumber[39m[33m.[39m[36mfrom[39m(time)[33m.[39mtoString()))[0m
+  [0m [90m 106 |[39m         [33m.[39m[36mcatch[39m(logger[33m.[39merror)[33m;[39m[0m
+  [0m [90m 107 |[39m     }[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Parameter 'time' implicitly has an 'any' type.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/ICOToken.tsx:[33m105[39m:[33m16[39m
+
+  [0m [90m 103 |[39m       contract[0m
+  [0m [90m 104 |[39m         [33m.[39mclosingTime()[0m
+  [0m[31m[1m>[22m[39m[90m 105 |[39m         [33m.[39mthen((time) [33m=>[39m setClosingTime([33mBigNumber[39m[33m.[39m[36mfrom[39m(time)[33m.[39mtoString()))[0m
+  [0m [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 106 |[39m         [33m.[39m[36mcatch[39m(logger[33m.[39merror)[33m;[39m[0m
+  [0m [90m 107 |[39m     }[33m;[39m[0m
+  [0m [90m 108 |[39m     [36mtry[39m {[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Cannot find module './artifacts/contracts/DonutStone.sol/DonutStone.json' or its corresponding type declarations.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/MainCard.tsx:[33m8[39m:[33m33[39m
+
+  [0m [90m  6 |[39m [36mimport[39m { useQuery } [36mfrom[39m [32m"react-query"[39m[33m;[39m[0m
+  [0m [90m  7 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m [33mDonutStoneArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStone.sol/DonutStone.json"[39m[33m;[39m[0m
+  [0m [90m    |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m [36mimport[39m [33mDonutStoneCrowdsaleArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json"[39m[33m;[39m[0m
+  [0m [90m 10 |[39m [36mimport[39m logger [36mfrom[39m [32m"./logger"[39m[33m;[39m[0m
+  [0m [90m 11 |[39m [36mimport[39m { [33mDonutStone[39m } [36mfrom[39m [32m"./types/DonutStone"[39m[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Cannot find module './artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json' or its corresponding type declarations.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/MainCard.tsx:[33m9[39m:[33m42[39m
+
+  [0m [90m  7 |[39m[0m
+  [0m [90m  8 |[39m [36mimport[39m [33mDonutStoneArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStone.sol/DonutStone.json"[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mDonutStoneCrowdsaleArtifacts[39m [36mfrom[39m [32m"./artifacts/contracts/DonutStoneCrowdsale.sol/DonutStoneCrowdsale.json"[39m[33m;[39m[0m
+  [0m [90m    |[39m                                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 10 |[39m [36mimport[39m logger [36mfrom[39m [32m"./logger"[39m[33m;[39m[0m
+  [0m [90m 11 |[39m [36mimport[39m { [33mDonutStone[39m } [36mfrom[39m [32m"./types/DonutStone"[39m[33m;[39m[0m
+  [0m [90m 12 |[39m [36mimport[39m { [33mDonutStoneCrowdsale[39m } [36mfrom[39m [32m"./types/DonutStoneCrowdsale"[39m[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Property 'closingTime' does not exist on type 'DonutStoneCrowdsale'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/MainCard.tsx:[33m59[39m:[33m10[39m
+
+  [0m [90m 57 |[39m         [33m.[39m[36mcatch[39m(logger[33m.[39merror)[33m;[39m[0m
+  [0m [90m 58 |[39m       contract[0m
+  [0m[31m[1m>[22m[39m[90m 59 |[39m         [33m.[39mclosingTime()[0m
+  [0m [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 60 |[39m         [33m.[39mthen((time) [33m=>[39m setClosingTime([33mBigNumber[39m[33m.[39m[36mfrom[39m(time)[33m.[39mtoString()))[0m
+  [0m [90m 61 |[39m         [33m.[39m[36mcatch[39m(logger[33m.[39merror)[33m;[39m[0m
+  [0m [90m 62 |[39m     }[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Parameter 'time' implicitly has an 'any' type.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/src/MainCard.tsx:[33m60[39m:[33m16[39m
+
+  [0m [90m 58 |[39m       contract[0m
+  [0m [90m 59 |[39m         [33m.[39mclosingTime()[0m
+  [0m[31m[1m>[22m[39m[90m 60 |[39m         [33m.[39mthen((time) [33m=>[39m setClosingTime([33mBigNumber[39m[33m.[39m[36mfrom[39m(time)[33m.[39mtoString()))[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 61 |[39m         [33m.[39m[36mcatch[39m(logger[33m.[39merror)[33m;[39m[0m
+  [0m [90m 62 |[39m     }[33m;[39m[0m
+  [0m [90m 63 |[39m     [36mtry[39m {[0m
+
+Found 11 errors. Watching for file changes.
+
+^C
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m──────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[33m[0m[33m[41m[43m[30m 23s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m──────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[33m[0m[33m[41m[43m[30m 23s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[7mnpx hardhat compile --network localhost[27m[39D[27mn[27mp[27mx[27m [27mh[27ma[27mr[27md[27mh[27ma[27mt[27m [27mc[27mo[27mm[27mp[27mi[27ml[27me[27m [27m-[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[27m [27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[1C                                 m run build[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run build[K[?12l[?25h
+]2;npm run build]1;npm
+> basic-erc20-token@0.0.1 build
+> npx hardhat compile --network localhost && tsc && vite build
+
+Compiling 16 files with 0.8.4
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:63:3:[39m
+[33m   |[39m
+[33m63 | 		uint256 rate,[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m   --> contracts/Crowdsale.sol:106:2:[39m
+[33m    |[39m
+[33m106 | 	function rate() public view returns (uint256) {[39m
+[33m    | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:64:3:[39m
+[33m   |[39m
+[33m64 | 		address payable wallet,[39m
+[33m   | 		^^^^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:99:2:[39m
+[33m   |[39m
+[33m99 | 	function wallet() public view returns (address payable) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:65:3:[39m
+[33m   |[39m
+[33m65 | 		IERC20 token[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:92:2:[39m
+[33m   |[39m
+[33m92 | 	function token() public view returns (IERC20) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:23:14:[39m
+[33m   |[39m
+[33m23 | 	constructor(address tokenWallet) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:34:2:[39m
+[33m   |[39m
+[33m34 | 	function tokenWallet() public view returns (address) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:14:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:57:2:[39m
+[33m   |[39m
+[33m57 | 	function openingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:35:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	                                 ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:64:2:[39m
+[33m   |[39m
+[33m64 | 	function closingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[31mDeclarationError: Identifier not found or not unique.[39m
+[31m  --> contracts/DonutStone.sol:13:61:[39m
+[31m   |[39m
+[31m13 | 	function mint(address to, uint256 amount) public onlyOwner whenNotPause {[39m
+[31m   | 	                                                           ^^^^^^^^^^^^[39m
+[31m[39m
+[31m[39m
+[31mError HH600: Compilation failed[39m
+
+For more info go to https://hardhat.org/HH600 or run Hardhat with --show-stack-traces
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m──────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 8s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hnpm run build[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run build[K[?12l[?25h
+]2;npm run build]1;npm
+> basic-erc20-token@0.0.1 build
+> npx hardhat compile --network localhost && tsc && vite build
+
+Compiling 16 files with 0.8.4
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:63:3:[39m
+[33m   |[39m
+[33m63 | 		uint256 rate,[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m   --> contracts/Crowdsale.sol:106:2:[39m
+[33m    |[39m
+[33m106 | 	function rate() public view returns (uint256) {[39m
+[33m    | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:64:3:[39m
+[33m   |[39m
+[33m64 | 		address payable wallet,[39m
+[33m   | 		^^^^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:99:2:[39m
+[33m   |[39m
+[33m99 | 	function wallet() public view returns (address payable) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:65:3:[39m
+[33m   |[39m
+[33m65 | 		IERC20 token[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:92:2:[39m
+[33m   |[39m
+[33m92 | 	function token() public view returns (IERC20) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:23:14:[39m
+[33m   |[39m
+[33m23 | 	constructor(address tokenWallet) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:34:2:[39m
+[33m   |[39m
+[33m34 | 	function tokenWallet() public view returns (address) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:14:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:57:2:[39m
+[33m   |[39m
+[33m57 | 	function openingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:35:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	                                 ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:64:2:[39m
+[33m   |[39m
+[33m64 | 	function closingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+Generating typings for: 16 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 25 typings!
+Successfully generated 3 typings for external artifacts!
+Compilation finished successfully
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m
+    [7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3156[0m:[93m13[0m - [91merror[0m[90m TS2717: [0mSubsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+
+[7m3156[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+[7m    [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3132[0m:[93m13[0m
+    [7m3132[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+    [7m    [0m [96m            ~~~~~[0m
+    'input' was also declared here.
+
+[96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m
+    [7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96msrc/ICOToken.tsx[0m:[93m104[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'closingTime' does not exist on type 'DonutStoneCrowdsale'.
+
+[7m104[0m         .closingTime()
+[7m   [0m [91m         ~~~~~~~~~~~[0m
+
+[96msrc/ICOToken.tsx[0m:[93m105[0m:[93m16[0m - [91merror[0m[90m TS7006: [0mParameter 'time' implicitly has an 'any' type.
+
+[7m105[0m         .then((time) => setClosingTime(BigNumber.from(time).toString()))
+[7m   [0m [91m               ~~~~[0m
+
+[96msrc/MainCard.tsx[0m:[93m59[0m:[93m10[0m - [91merror[0m[90m TS2339: [0mProperty 'closingTime' does not exist on type 'DonutStoneCrowdsale'.
+
+[7m59[0m         .closingTime()
+[7m  [0m [91m         ~~~~~~~~~~~[0m
+
+[96msrc/MainCard.tsx[0m:[93m60[0m:[93m16[0m - [91merror[0m[90m TS7006: [0mParameter 'time' implicitly has an 'any' type.
+
+[7m60[0m         .then((time) => setClosingTime(BigNumber.from(time).toString()))
+[7m  [0m [91m               ~~~~[0m
+
+
+Found 7 errors.
+
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 12s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 12s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hnpm run build[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run build[K[?12l[?25h
+]2;npm run build]1;npm
+> basic-erc20-token@0.0.1 build
+> npx hardhat compile --network localhost && tsc && vite build
+
+Compiling 16 files with 0.8.4
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:63:3:[39m
+[33m   |[39m
+[33m63 | 		uint256 rate,[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m   --> contracts/Crowdsale.sol:106:2:[39m
+[33m    |[39m
+[33m106 | 	function rate() public view returns (uint256) {[39m
+[33m    | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:64:3:[39m
+[33m   |[39m
+[33m64 | 		address payable wallet,[39m
+[33m   | 		^^^^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:99:2:[39m
+[33m   |[39m
+[33m99 | 	function wallet() public view returns (address payable) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:65:3:[39m
+[33m   |[39m
+[33m65 | 		IERC20 token[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:92:2:[39m
+[33m   |[39m
+[33m92 | 	function token() public view returns (IERC20) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:23:14:[39m
+[33m   |[39m
+[33m23 | 	constructor(address tokenWallet) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:34:2:[39m
+[33m   |[39m
+[33m34 | 	function tokenWallet() public view returns (address) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:14:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:57:2:[39m
+[33m   |[39m
+[33m57 | 	function openingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:35:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	                                 ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:64:2:[39m
+[33m   |[39m
+[33m64 | 	function closingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+Generating typings for: 16 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 25 typings!
+Successfully generated 3 typings for external artifacts!
+Compilation finished successfully
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m
+    [7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3156[0m:[93m13[0m - [91merror[0m[90m TS2717: [0mSubsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+
+[7m3156[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+[7m    [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3132[0m:[93m13[0m
+    [7m3132[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+    [7m    [0m [96m            ~~~~~[0m
+    'input' was also declared here.
+
+[96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m
+    [7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96msrc/ICOToken.tsx[0m:[93m169[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'closingTime'.
+
+[7m169[0m             {Number(closingTime) > 0 && (
+[7m   [0m [91m                    ~~~~~~~~~~~[0m
+
+[96msrc/ICOToken.tsx[0m:[93m187[0m:[93m43[0m - [91merror[0m[90m TS2304: [0mCannot find name 'closingTime'.
+
+[7m187[0m                   <label>{new Date(Number(closingTime) * 1000).toLocaleString()}</label>
+[7m   [0m [91m                                          ~~~~~~~~~~~[0m
+
+
+Found 5 errors.
+
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 13s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hnpm run build[13D             [13Dnpm run builddev  build[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run build[K[?12l[?25h
+]2;npm run build]1;npm
+> basic-erc20-token@0.0.1 build
+> npx hardhat compile --network localhost && tsc && vite build
+
+Nothing to compile
+Generating typings for: 0 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 3 typings!
+Successfully generated 3 typings for external artifacts!
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m
+    [7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3156[0m:[93m13[0m - [91merror[0m[90m TS2717: [0mSubsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+
+[7m3156[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+[7m    [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3132[0m:[93m13[0m
+    [7m3132[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+    [7m    [0m [96m            ~~~~~[0m
+    'input' was also declared here.
+
+[96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m
+    [7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+
+Found 3 errors.
+
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 10s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hnpm run builddev  build[13D             [13Dnpm run build[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run build[K[?12l[?25h
+]2;npm run build]1;npm
+> basic-erc20-token@0.0.1 build
+> npx hardhat compile --network localhost && tsc && vite build
+
+Nothing to compile
+Generating typings for: 0 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 3 typings!
+Successfully generated 3 typings for external artifacts!
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m
+    [7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3156[0m:[93m13[0m - [91merror[0m[90m TS2717: [0mSubsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+
+[7m3156[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+[7m    [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3132[0m:[93m13[0m
+    [7m3132[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+    [7m    [0m [96m            ~~~~~[0m
+    'input' was also declared here.
+
+[96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m
+    [7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+
+Found 3 errors.
+
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 10s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?25[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 10s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25hnpm run builddev  builddev  [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run dev[K[?12l[?25h
+]2;npm run dev]1;npm
+> basic-erc20-token@0.0.1 dev
+> vite
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[36m[39m
+[36m  vite v2.5.10[39m[32m dev server running at:[39m
+[32m[39m
+  > Local:    [36mhttp://localhost:[1m3000[22m/[39m
+  > Network:  [36mhttp://192.168.0.6:[1m3000[22m/[39m
+[36m[39m
+[36m  ready in 625ms.[39m
+[36m[39m
+
+[1m[33mwarn[39m[22m - You have enabled the JIT engine which is currently in preview.
+[1m[33mwarn[39m[22m - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
+
+[35m🌼 DaisyUI components 1.14.0[0m [0m https://github.com/saadeghi/daisyui
+  [32m✔︎ Including:[0m [0m base, components, themes[21], utilities
+  
+
+[35m🌼 DaisyUI components 1.14.0[0m [0m https://github.com/saadeghi/daisyui
+  [32m✔︎ Including:[0m [0m base, components, themes[21], utilities
+  
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Duplicate identifier 'LibraryManagedAttributes'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/node_modules/@types/react-dom/node_modules/@types/react/index.d.ts:[33m3092[39m:[33m14[39m
+
+  [0m [90m 3090 |[39m         [90m// We can't recurse forever because `type` can't be self-referential;[39m[0m
+  [0m [90m 3091 |[39m         [90m// let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3092 |[39m         type [33mLibraryManagedAttributes[39m[33m<[39m[33mC[39m[33m,[39m [33mP[39m[33m>[39m [33m=[39m [33mC[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m[0m
+  [0m [90m      |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3093 |[39m             [33m?[39m [33mT[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m[0m
+  [0m [90m 3094 |[39m                 [33m?[39m [33mReactManagedAttributes[39m[33m<[39m[33mU[39m[33m,[39m [33mP[39m[33m>[39m[0m
+  [0m [90m 3095 |[39m                 [33m:[39m [33mReactManagedAttributes[39m[33m<[39m[33mT[39m[33m,[39m [33mP[39m[33m>[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Subsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/node_modules/@types/react-dom/node_modules/@types/react/index.d.ts:[33m3156[39m:[33m13[39m
+
+  [0m [90m 3154 |[39m             iframe[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mIframeHTMLAttributes[39m[33m<[39m[33mHTMLIFrameElement[39m[33m>[39m[33m,[39m [33mHTMLIFrameElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 3155 |[39m             img[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mImgHTMLAttributes[39m[33m<[39m[33mHTMLImageElement[39m[33m>[39m[33m,[39m [33mHTMLImageElement[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3156 |[39m             input[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mInputHTMLAttributes[39m[33m<[39m[33mHTMLInputElement[39m[33m>[39m[33m,[39m [33mHTMLInputElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3157 |[39m             ins[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mInsHTMLAttributes[39m[33m<[39m[33mHTMLModElement[39m[33m>[39m[33m,[39m [33mHTMLModElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 3158 |[39m             kbd[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mHTMLAttributes[39m[33m<[39m[33mHTMLElement[39m[33m>[39m[33m,[39m [33mHTMLElement[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 3159 |[39m             keygen[33m:[39m [33mReact[39m[33m.[39m[33mDetailedHTMLProps[39m[33m<[39m[33mReact[39m[33m.[39m[33mKeygenHTMLAttributes[39m[33m<[39m[33mHTMLElement[39m[33m>[39m[33m,[39m [33mHTMLElement[39m[33m>[39m[33m;[39m[0m
+
+[1m[38;5;16m[101m ERROR(TypeScript) [49m[39m[22m Duplicate identifier 'LibraryManagedAttributes'.
+[1m[38;5;16m[106m FILE [49m[39m[22m /Users/noah/projects/dapp-token-ico/node_modules/@types/react/index.d.ts:[33m3068[39m:[33m14[39m
+
+  [0m [90m 3066 |[39m         [90m// We can't recurse forever because `type` can't be self-referential;[39m[0m
+  [0m [90m 3067 |[39m         [90m// let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3068 |[39m         type [33mLibraryManagedAttributes[39m[33m<[39m[33mC[39m[33m,[39m [33mP[39m[33m>[39m [33m=[39m [33mC[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mT[39m[33m>[39m[0m
+  [0m [90m      |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3069 |[39m             [33m?[39m [33mT[39m [36mextends[39m [33mReact[39m[33m.[39m[33mMemoExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m [33m|[39m [33mReact[39m[33m.[39m[33mLazyExoticComponent[39m[33m<[39m[33minfer[39m [33mU[39m[33m>[39m[0m
+  [0m [90m 3070 |[39m                 [33m?[39m [33mReactManagedAttributes[39m[33m<[39m[33mU[39m[33m,[39m [33mP[39m[33m>[39m[0m
+  [0m [90m 3071 |[39m                 [33m:[39m [33mReactManagedAttributes[39m[33m<[39m[33mT[39m[33m,[39m [33mP[39m[33m>[39m[0m
+
+Found 3 errors. Watching for file changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:30:35[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:30:56[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:31:09[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:31:29[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/js/typewriter.js[22m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[100m[34m[0m[34m[100m[100m[30m  [30m main [30m!48 [30m?25[0m[30m[100m[100m[30m [0m[30m[100m[49m[90m[0m[90m[49m[39m[38;5;242m────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[33m[0m[33m[41m[43m[30m 3m 1s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004h[?25l[A[A[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?24[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[33m[0m[33m[41m[43m[30m 3m 1s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?12l[?25h[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m [K[?12l[?25h
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?24[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hnpm run devbuilddev  build[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m npm run build[K[?12l[?25h
+]2;npm run build]1;npm
+> basic-erc20-token@0.0.1 build
+> npx hardhat compile --network localhost && tsc && vite build
+
+Compiling 16 files with 0.8.4
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:63:3:[39m
+[33m   |[39m
+[33m63 | 		uint256 rate,[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m   --> contracts/Crowdsale.sol:106:2:[39m
+[33m    |[39m
+[33m106 | 	function rate() public view returns (uint256) {[39m
+[33m    | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:64:3:[39m
+[33m   |[39m
+[33m64 | 		address payable wallet,[39m
+[33m   | 		^^^^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:99:2:[39m
+[33m   |[39m
+[33m99 | 	function wallet() public view returns (address payable) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/Crowdsale.sol:65:3:[39m
+[33m   |[39m
+[33m65 | 		IERC20 token[39m
+[33m   | 		^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/Crowdsale.sol:92:2:[39m
+[33m   |[39m
+[33m92 | 	function token() public view returns (IERC20) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:23:14:[39m
+[33m   |[39m
+[33m23 | 	constructor(address tokenWallet) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/AllowanceCrowdsale.sol:34:2:[39m
+[33m   |[39m
+[33m34 | 	function tokenWallet() public view returns (address) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:14:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	            ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:57:2:[39m
+[33m   |[39m
+[33m57 | 	function openingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+[33mWarning: This declaration shadows an existing declaration.[39m
+[33m  --> contracts/TimedCrowdsale.sol:38:35:[39m
+[33m   |[39m
+[33m38 | 	constructor(uint256 openingTime, uint256 closingTime) {[39m
+[33m   | 	                                 ^^^^^^^^^^^^^^^^^^^[39m
+[33mNote: The shadowed declaration is here:[39m
+[33m  --> contracts/TimedCrowdsale.sol:64:2:[39m
+[33m   |[39m
+[33m64 | 	function closingTime() public view returns (uint256) {[39m
+[33m   | 	^ (Relevant source part starts here and spans across multiple lines).[39m
+[33m[39m
+[33m[39m
+Generating typings for: 16 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 25 typings!
+Successfully generated 3 typings for external artifacts!
+Compilation finished successfully
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m
+    [7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+[96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3156[0m:[93m13[0m - [91merror[0m[90m TS2717: [0mSubsequent property declarations must have the same type.  Property 'input' must be of type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>', but here has type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.
+
+[7m3156[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+[7m    [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m3132[0m:[93m13[0m
+    [7m3132[0m             input: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+    [7m    [0m [96m            ~~~~~[0m
+    'input' was also declared here.
+
+[96mnode_modules/@types/react/index.d.ts[0m:[93m3068[0m:[93m14[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LibraryManagedAttributes'.
+
+[7m3068[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+[7m    [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/react-dom/node_modules/@types/react/index.d.ts[0m:[93m3092[0m:[93m14[0m
+    [7m3092[0m         type LibraryManagedAttributes<C, P> = C extends React.MemoExoticComponent<infer T> | React.LazyExoticComponent<infer T>
+    [7m    [0m [96m             ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'LibraryManagedAttributes' was also declared here.
+
+
+Found 3 errors.
+
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?24[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────[0m[38;5;242m[49m[33m[0m[33m[43m[30m 13s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hggit remit  ote rm orugu   igin[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;196m❯[0m[38;5;196m[49m[39m[27m[24m git remote rm origin[K[?12l[?25h
+]2;git remote rm origin]1;git[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!48 [30m?24[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[38;5;242m─────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hrrm r 0r  0r  -rg  f .git[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m rm -rf .git[K[?12l[?25h
+]2;rm -rf .git]1;rm[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[49m[34m[0m[34m[49m[39m[38;5;242m───────────────────────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hggit init[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[38;5;76m❯[0m[38;5;76m[49m[39m[27m[24m git init[K[?12l[?25h
+]2;git init]1;git[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
+[33mhint: is subject to change. To configure the initial branch name to use in all[m
+[33mhint: of your new repositories, which will suppress this warning, call:[m
+[33mhint: [m
+[33mhint: 	git config --global init.defaultBranch <name>[m
+[33mhint: [m
+[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
+[33mhint: 'development'. The just-created branch can be renamed via this command:[m
+[33mhint: [m
+[33mhint: 	git branch -m <name>[m
+Initialized empty Git repository in /Users/noah/projects/dapp-token-ico/.git/
+[1m[7m%[27m[1m[0m                                                                                                                   ]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico]2;noah@Noahs-MBP-2]1;..app-token-ico]7;file://Noahs-MBP-2/Users/noah/projects/dapp-token-ico[0m[27m[24m[J[0m[38;5;242m[49m[39m
+
+[A[0m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/projects/[1m[38;5;254m[44m[38;5;255mdapp-token-ico[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[42m[34m[0m[34m[42m[42m[30m  [30m master [30m?28[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[38;5;242m───────────────────────────────────────────────────────────────[0m[38;5;242m[49m[39m[38;5;242m─╮
+[0m[38;5;242m[49m[39m[0m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[110C[0m[49m[39m[38;5;242m─╯[39m[112D[?1h=[?2004hggit remote add origin  [7mgit remote add origin https://github.com/NFS002/donut-stones.git[27m[64D[27mg[27mi[27mt[27m [27mr[27me[27mm[27mo[27mt[27me[27m [27ma[27md[27md[27m [27mo[27mr[27mi[27mg[27mi[27mn[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27mg[27mi[27mt[27mh[27mu[27mb[27m.[27mc[27mo[27mm[27m/[27mN[27mF[27mS[27m0[27m0[27m2[27m/[27md[27mo[27mn[27mu[27mt[27m-[27ms[27mt[27mo[27mn[27me[27ms[27m.[27mg[27mi[27mt
