@@ -1,8 +1,8 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Lonely Token Crowdsale", () => {
-  it("Should have 70% of Lonely Token tokens", async () => {
+describe("Donut Stone Crowdsale", () => {
+  it("Should have 70% of Donut Stones", async () => {
     const DonutStoneContract = await ethers.getContractFactory("DonutStone");
     const donutStone = await DonutStoneContract.deploy();
     await donutStone.deployed();
