@@ -2,4 +2,4 @@ node_modules
 artifacts
 cache
 coverage
-before-add.js
+pre-commit.gh-pages.js

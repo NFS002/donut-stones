@@ -1,4 +1,3 @@
-/*eslint global-require: "off"*/
 const fs = require("fs");
 
 /* Find and replace asset paths in html */

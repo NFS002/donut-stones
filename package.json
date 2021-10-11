@@ -10,7 +10,7 @@
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
     "test": "mocha --exit --recursive",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -a --before-add ./before-add.js"
+    "deploy": "gh-pages -d dist -a --before-add ./pre-commit.gh-pages.js"
 
   },
   "dependencies": {
