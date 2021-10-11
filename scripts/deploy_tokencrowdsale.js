@@ -6,32 +6,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const { ethers } = require("hardhat");
 
-async function latestTime() {
-  const block = await ethers.provider.getBlock("latest");
-  return block.timestamp;
-}
-
-const duration = {
-  seconds(val) {
-    return val;
-  },
-  minutes(val) {
-    return val * this.seconds(60);
-  },
-  hours(val) {
-    return val * this.minutes(60);
-  },
-  days(val) {
-    return val * this.hours(24);
-  },
-  weeks(val) {
-    return val * this.days(7);
-  },
-  years(val) {
-    return val * this.days(365);
-  },
-};
-
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
   // line interface.
@@ -57,19 +31,7 @@ async function main() {
   // deploy crowdsale contract
   const DonutStoneCrowdsaleContract = await ethers.getContractFactory("DonutStoneCrowdsale");
   const rate = 500; // 500 wei per token
-  const latestBlockTime = await latestTime();
-  const openingTime = latestBlockTime + duration.minutes(1);
-  const closeTime = openingTime + duration.weeks(1); // 1 week
-  console.log("openingTime", openingTime);
-  console.log("closeTime", closeTime);
-  const donutStoneCrowdsale = await DonutStoneCrowdsaleContract.deploy(
-    rate,
-    owner,
-    donutStone.address,
-    owner,
-    openingTime,
-    closeTime
-  );
+  const donutStoneCrowdsale = await DonutStoneCrowdsaleContract.deploy(rate, owner, donutStone.address, owner);
 
   await donutStoneCrowdsale.deployed();
   console.log("DonutStone Crowdsale deployed to:", donutStoneCrowdsale.address);

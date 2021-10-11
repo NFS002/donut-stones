@@ -1,7 +1,6 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-
 describe("Lonely Token Crowdsale", () => {
   it("Should have 70% of Lonely Token tokens", async () => {
     const DonutStoneContract = await ethers.getContractFactory("DonutStone");
@@ -9,7 +8,7 @@ describe("Lonely Token Crowdsale", () => {
     await donutStone.deployed();
 
     expect(await donutStone.name()).to.equal("DonutStone");
-    expect(await donutStone.symbol()).to.equal("⅊");
+    expect(await donutStone.symbol()).to.equal("DS");
     expect(await donutStone.decimals()).to.equal(18);
     const totalSupply = await donutStone.totalSupply();
     expect(totalSupply).to.equal(ethers.BigNumber.from("1000000000000000000000000"));
@@ -17,12 +16,7 @@ describe("Lonely Token Crowdsale", () => {
 
     const DonutStoneCrowdsaleContract = await ethers.getContractFactory("DonutStoneCrowdsale");
     const rate = 500; // 500 wei per token
-    const donutStoneCrowdsale = await DonutStoneCrowdsaleContract.deploy(
-      rate,
-      owner,
-      donutStone.address,
-      owner
-    );
+    const donutStoneCrowdsale = await DonutStoneCrowdsaleContract.deploy(rate, owner, donutStone.address, owner);
 
     await donutStoneCrowdsale.deployed();
 
@@ -34,5 +28,4 @@ describe("Lonely Token Crowdsale", () => {
     expect(await donutStoneCrowdsale.rate()).to.equal(rate);
     expect(await donutStoneCrowdsale.remainingTokens()).to.equal(ethers.BigNumber.from("700000000000000000000000"));
   });
-  
 });

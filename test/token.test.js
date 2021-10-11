@@ -15,7 +15,7 @@ describe("Lonely Token", () => {
     const donutStone = await DonutStoneContract.deploy();
     await donutStone.deployed();
 
-    expect(await donutStone.symbol()).to.equal("⅊");
+    expect(await donutStone.symbol()).to.equal("DS");
   });
 
   it("Should return decimals", async () => {
