@@ -10,7 +10,13 @@ import React from "react";
 import { injected, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
-import { Header } from "./Header";
+
+import { Connector } from "./Connector"
+
+
+import { Account } from "./Account";
+import { Balance } from "./Balance";
+import { ChainId } from "./ChainId";
 
 function getErrorMessage(error: Error) {
   if (error instanceof NoEthereumProviderError) {
@@ -34,7 +40,7 @@ export function getLibrary(provider: any): Web3Provider {
   return library;
 }
 
-export default function Demo() {
+export default function AccountInfo() {
   const context = useWeb3React<Web3Provider>();
   const { connector, activate, deactivate, active, error } = context;
 
@@ -54,43 +60,22 @@ export default function Demo() {
 
   const activating = injected === activatingConnector;
   const connected = injected === connector;
-  const disabled = !triedEager || !!activatingConnector || connected || !!error;
   return (
-    <Header>
-      <div className="flex flex-row w-full ml-4 mr-4">
-        <button
-          className="btn btn-primary"
-          disabled={disabled}
-          onClick={() => {
-            setActivatingConnector(injected);
-            activate(injected);
-          }}
-        >
-          <div>
-            {activating && <p className="btn loading">loading...</p>}
-            {connected && (
-              <span role="img" aria-label="check">
-                ✅
-              </span>
-            )}
+    <div id="account-info" className="mb-2 shadow-lg navbar rounded">
+      <div className="flex-1 px-2 mx-2">
+        <div className="flex flex-row w-full ml-4 mr-4">
+            <Connector />
+            <div>
+              {!!error && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}
+            </div>
           </div>
-          Connect with MetaMask
-        </button>
-        <div>
-          {(active || error) && (
-            <button
-              className="btn btn-secondary"
-              onClick={() => {
-                deactivate();
-              }}
-            >
-              Deactivate
-            </button>
-          )}
-
-          {!!error && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}
         </div>
-      </div>
-    </Header>
+        <div className="flex-none hidden px-2 mx-2 lg:flex">
+          <div className="flex items-stretch">
+            <Account />
+            <Balance />
+          </div>
+        </div>
+    </div>
   );
 }

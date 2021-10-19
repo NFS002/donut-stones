@@ -1,10 +1,9 @@
-
 #number-of-tokens-to-buy-values.typed-text p {
-  border-right: .15em dashed transparent;
+  border-right: 0.15em dashed transparent;
   white-space: nowrap;
   overflow: hidden;
 
-  width: 15em;
+  width: 20em;
   opacity: 0;
   -webkit-animation: type2 2s steps(20, end);
   animation: type2 2s steps(20, end);
@@ -20,7 +19,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em dashed transparent;
+    border-right: 0.15em dashed transparent;
   }
   100% {
     border: none;
@@ -32,7 +31,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em dashed transparent;
+    border-right: 0.15em dashed transparent;
   }
   100% {
     border: none;
@@ -47,7 +46,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em dashed transparent;
+    border-right: 0.15em dashed transparent;
   }
   100% {
     opacity: 1;
@@ -63,7 +62,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em dashed transparent;
+    border-right: 0.15em dashed transparent;
   }
   100% {
     opacity: 1;

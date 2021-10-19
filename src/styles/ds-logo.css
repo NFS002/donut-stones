@@ -1,0 +1,9 @@
+div[class^="ds-logo-wrapper"] {
+  margin-bottom: -20px;
+  margin-top: -5%;
+  font-size: 8.5em;
+  color: #113c56;
+  text-shadow: 0px 0px #127d82, 1px 1px #ffffff, 2px 2px #0f676c, 3px 3px #117479, 4px 4px #11797e, 5px 5px #107075,
+    6px 6px #0c565a, 7px 7px #107075, 8px 8px #ffffff, 9px 9px #0e5f63, 10px 10px #0f676c, 11px 11px #0e5f63,
+    12px 12px #0e5f63, 13px 13px #0c565a, 14px 14px #0d5b5e, 15px 15px #0c5255, 16px 16px #107075, 17px 17px #ffffff;
+}

@@ -1,8 +1,0 @@
-strict digraph {
-  store
-  ValueChanged
-  retrieve [color=yellow]
-  increment
-  store -> ValueChanged
-  increment -> ValueChanged
-}

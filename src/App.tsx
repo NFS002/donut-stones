@@ -4,16 +4,15 @@ import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
-import ICOToken from "./ICOToken";
-import MainCard from "./MainCard";
-import Demo from "./components/Demo";
-import { getLibrary } from "./components/Demo";
+import TokenInfo from "./components/TokenInfo";
+import { getLibrary } from "./components/AccountInfo";
 
 
-import "./styles/App.css";
+import "./styles/app.css";
 import "./styles/index.css";
 import "./styles/typewriter.css";
 import "./styles/circular-progressbar.css";
+import "./styles/ds-logo.css";
 
 const crowdsaleAddress = import.meta.env.VITE_CROWDSALE_ADDRESS;
 
@@ -23,9 +22,8 @@ function App() {
     <Web3ReactProvider getLibrary={getLibrary}>
       <QueryClientProvider client={queryClient}>
         <div className="container">
-          <div className="App pt-6 shadow-xl">
-          
-            <MainCard crowdsaleAddress={crowdsaleAddress} />
+          <div className="App pt-6 shadow-xl">        
+            <TokenInfo crowdsaleAddress={crowdsaleAddress} />
           </div>
         </div>
         <ReactQueryDevtools initialIsOpen={false} />

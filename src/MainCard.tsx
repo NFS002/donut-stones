@@ -12,6 +12,7 @@ import { DonutStone } from "./types/DonutStone";
 import { DonutStoneCrowdsale } from "./types/DonutStoneCrowdsale";
 
 import TokenInfo from './components/TokenInfo'
+import AccountInfo from './components/AccountInfo'
 
 declare global {
   interface Window {
@@ -20,11 +21,13 @@ declare global {
 }
 
 const providerUrl = import.meta.env.VITE_PROVIDER_URL;
+const totalSupply = 0
+const availableForSale = 0
 
 async function requestAccount() {
   if (window.ethereum?.request) return window.ethereum.request({ method: "eth_requestAccounts" });
 
-  throw new Error("Missing install Metamask. Please access https://metamask.io/ to install extension on your browser");
+  throw new Error("Metamask not installed. Please access https://metamask.io/ to install extension on your browser");
 }
 
 const MainCard = ({ crowdsaleAddress }: { crowdsaleAddress: string }) => {
@@ -62,47 +65,29 @@ const MainCard = ({ crowdsaleAddress }: { crowdsaleAddress: string }) => {
     }
   }, [library]);
 
-  // buy token base on quantity
-  const buyTokens = async () => {
-    const provider = library || new ethers.providers.Web3Provider(window.ethereum || providerUrl);
-    const signer = provider.getSigner();
-    try {
-      if (!account) {
-        await requestAccount();
-        return;
-      }
-      const txPrams = {
-        to: crowdsaleAddress,
-        value: ethers.BigNumber.from(parseEther(String(1 / Number(price)))).mul(amount),
-      };
-      logger.warn({ txPrams });
-      const transaction = await signer.sendTransaction(txPrams);
-      toast.promise(transaction.wait(), {
-        loading: `Transaction submitted. Wait for confirmation...`,
-        success: <b>Transaction confirmed!</b>,
-        error: <b>Transaction failed!.</b>,
-      });
-    } catch (error) {
-      logger.error(error);
-    }
-  };
-
-  const totalCost = (1 / Number(price)) * amount;
-
   const fetchTokenInfo = async () => {
     logger.warn("fetchTokenInfo");
-    const provider = library || new ethers.providers.Web3Provider(window.ethereum || providerUrl);
+    const provider = window.ethereum ? new ethers.providers.Web3Provider(window.ethereum) : new ethers.providers.JsonRpcProvider(providerUrl);
     const tokenContract = new ethers.Contract(tokenAddress, DonutStoneArtifacts.abi, provider) as DonutStone;
+    const crowdsaleContract = new ethers.Contract(crowdsaleAddress, DonutStoneCrowdsaleArtifacts.abi, provider) as DonutStoneCrowdsale;
     const name = await tokenContract.name();
     const symbol = await tokenContract.symbol();
     const decimals = await tokenContract.decimals();
-    const totalSupply = await tokenContract.totalSupply();
-    logger.warn("token info", { name, symbol, decimals });
+    const totalSupply = await tokenContract.totalSupply()
+    const remainingTokens = await crowdsaleContract.remainingTokens()
+    const tokenRate = await crowdsaleContract.rate()
+
+    const tokensSoldPerc = totalSupply.sub(remainingTokens)
+
+    logger.warn("token info", { name, symbol, decimals, totalSupply, remainingTokens, tokensSoldPerc });
+
     return {
       name,
       symbol,
       decimals,
       totalSupply,
+      tokenRate,
+      tokensSoldPerc
     };
   };
 
@@ -110,19 +95,24 @@ const MainCard = ({ crowdsaleAddress }: { crowdsaleAddress: string }) => {
     enabled: tokenAddress !== "",
   });
 
-  if (data) {
-    return (
-      <TokenInfo tokenName={data.name} tokenSymbol={data.symbol} />
-    );
-  }
+  const tokenData = Object.assign({
+    name: 'DonutStone',
+    symbol: 'DS',
+    tokensSoldPerc: BigNumber.from("3"),
+    tokenRate: BigNumber.from("500"),
+    error: error
+  }, data)
 
-  else if (isLoading) { 
-    return <div>loading...</div>;
-  }
+  return (
+    <React.Fragment >
+      <AccountInfo />
 
-  else  {
-    return <div>failed to load: {error} </div>;
-  }
+      {/*<TokenInfo tokenName={tokenData.name} tokenSymbol={tokenData.symbol}
+        crowdsaleAddress={crowdsaleAddress} tokensSoldPerc={tokenData.tokensSoldPerc} tokenRate={tokenData.tokenRate} 
+      />*/}
+
+      </React.Fragment >
+  );
 }
 
 export default MainCard;

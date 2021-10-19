@@ -45,7 +45,7 @@ const TokenInfo = ({ tokenAddress }: { tokenAddress: string }) => {
   const { error, isLoading, data } = useQuery(["token-info", tokenAddress], fetchTokenInfo, {
     enabled: tokenAddress !== "",
   });
-
+  
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
 
