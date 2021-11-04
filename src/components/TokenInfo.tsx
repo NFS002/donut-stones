@@ -15,6 +15,7 @@ import { DonutStoneCrowdsale } from "../types/DonutStoneCrowdsale";
 
 import AccountInfo from "./AccountInfo";
 import { CircularProgressbar, buildStyles } from "./circular-progressbar";
+import CardText from "./CardText";
 import DSLogo from "./DSLogo";
 
 interface TokenInfoProps {
@@ -55,6 +56,16 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
   var inputValue = 1;
   var ethPriceGBP = 2573.54;
 
+  const getEthPriceGBP = async () => {
+    const payload = { fsym: "ETH", tsyms: "GBP", sign: true };
+
+    const response = await axios.post<EthPriceGBP>(
+      "https://min-api.cryptocompare.com/data/price",
+      payload
+    );
+    ethPriceGBP = response.data.GBP;
+  };
+
   /* Sue me... */
   const updateTokenValues = async function () {
     var input = document.getElementById(
@@ -65,22 +76,17 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
       inputValue = +input.value;
     }
 
-    const getEthPriceGBP = async () => {
-      const payload = { fsym: "ETH", tsyms: "GBP", sign: true };
-
-      const response = await axios.post<EthPriceGBP>(
-        "https://min-api.cryptocompare.com/data/price",
-        payload
-      );
-      ethPriceGBP = response.data.GBP;
-    };
-
     const decimals = 18;
     const weiValueRaw = inputValue * price.toNumber();
 
     const etherValueRaw = await utils.formatEther(weiValueRaw);
 
-    await getEthPriceGBP();
+    try {
+      await getEthPriceGBP();
+    }
+    catch(e) {
+      console.warn(e, `Fetch failed, defaulting to £${ethPriceGBP}/ETH`)
+    }
 
     const gbpValue = (+etherValueRaw * ethPriceGBP).toFixed(decimals);
     const etherValue = (+etherValueRaw).toFixed(decimals);
@@ -90,16 +96,15 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
 
     if (container) {
       var htmlTemplate = `
-      <p>= ${String(weiValue).substring(
+      <p>${String(weiValue).substring(
         0,
         decimals
       )} <span class="text-blue">Wei</span> </p>
-      <p>= ${String(etherValue).substring(
+      <p>${String(etherValue).substring(
         0,
         decimals
       )} <span class="text-blue">ETH</span> </p>
-      <p>≈ ${String(gbpValue).substring(
-        0,
+      <p>${String(gbpValue).substring(0,
         decimals
       )} <span class="text-blue">GBP</span> </p>
       `;
@@ -235,140 +240,96 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
   updateTokenValues();
 
   return (
-    <React.Fragment>
-      <AccountInfo />
-
-      <React.Fragment>
-        <div className='card shadow-2xl main-card rounded'>
-          <div className='card-body grid grid-rows-3 grid-cols-5'>
-            <div className='row-span-1 col-span-4'>
+        <div className='ds-card'>
+          <div className='ds-card-body row'>
+          <div className="ds-main-column col-xs-10">
             <DSLogo />
-              <div className='card-text col-span-4 row-span-1 text-grey text-lg'>
-                <p>
-                  Donut Stones is an ERC20 cryptographic token created as the{" "}
-                  <span className='italic'>antidote</span> to the traditional
-                  economic mechanisms of distrubuting value. It was inspired by
-                  the growing popular research on the 'doughnut economy' by Kate
-                  Raworth that illlustrates many of the flaws in traditional
-                  economies that rely on perpertual growth, and is not only
-                  sustainable model but increasingly neglects maginalised
-                  portions of the population. The idea behind Donut Stones (⅊)
-                  is a secondary currency, to circulate alongside traditional
-                  fiat currencies such as GBP, but which the exchange is
-                  regulated, and which can only be{" "}
-                  <span className='italic'>spent</span> at a predefined subset
-                  of institutions that offer essential goods and services. If we
-                  imagine the distribution of wealth as a doughut shape whereby
-                  the most severe inequalities and the most basic human
-                  necessities are most concentrated at the center and excess
-                  wealth and environmental degrdationm marks the perimeter, then
-                  Donut Stones provide the inverse model, concentrated at the
-                  center of the doughut, and becoming increasingly scarce and
-                  more tightly regulated towards the perimeter. To show your
-                  support for the project, anyone may currently buy or exchange
-                  Donut Stones. Alternatively, you may formally request them by
-                  sending an email to email@domain.com, quoting your ethererum
-                  address, and amount you would like to request. Of course any
-                  words of support or feedback will aso be greatly appreciated,
-                  and I will aim to keep this page updated.
-                  <br></br>
-                  If you are interested to find out more about the specificities
-                  of how this token may practically integrates into the modern
-                  economy,{" "}
-                  <a id='whitepaper-link' href='https://dumacollective.com/404'>
-                    you can read the whitepaper here.
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className='card-side row-span-3 col-span-1'>
-              <div className='divider divider-vertical'></div>
-            </div>
-            <div className='col-span-2 row-span-1'>
-              <div className='circular-progress-bar-parent-wrapper'>
-                <div className='card-bottom'>
-                  <div className='circular-progress-bar-wrapper'>
-                    <CircularProgressbar
-                      value={+tokensSoldPerc.toString().substring(0, 1)}
-                      text={`${tokensSoldPerc
-                        .toString()
-                        .substring(0, 1)}% sold`}
-                      strokeWidth={5}
-                      styles={buildStyles({
-                        textSize: "10px",
-                        strokeLinecap: "butt",
-                        pathColor: "#FFFFFF",
-                        textColor: "#FFFFFF",
-                      })}
-                    />
-                  </div>
-                </div>
-                <a
+              <CardText />
+                  <div className="row">
+                  <div className="col-xs-6">
+                  <div className='ds-progress-bar-wrapper'>
+                                                        <CircularProgressbar
+                                                          value={+tokensSoldPerc.toString().substring(0, 1)}
+                                                          text={`${tokensSoldPerc
+                                                            .toString()
+                                                            .substring(0, 1)}% sold`}
+                                                          strokeWidth={5}
+                                                          styles={buildStyles({
+                                                            textSize: "10px",
+                                                            strokeLinecap: "butt",
+                                                            pathColor: "#FFFFFF",
+                                                            textColor: "#FFFFFF",
+                                                          })}
+                                                        />
+                                    </div>
+                                    <span className='text-orange text-xl'>
+                    &#9432;{" "}
+                  </span>
+<a
                   id='etherscan-link'
                   className='text-grey italic'
                   href={`https://rinkeby.etherscan.io/token/${tokenAddress}`}
                   target='_blank'
                 >
-                  <span className='text-orange font-bold text-xl'>
-                    &#9432;{" "}
-                  </span>
+                  
+                  <span>
                   View contract on Etherscan
+                  </span>
                 </a>
-              </div>
+                                  </div>
+                                      <div className="col-xs-6">
+                                      <div className="ds-checkout">
+                                      <p className='text-grey'>
+                                                                                                  Buy Donut Stones
+                                                                                                </p>
+                                                                                              <div>
+                                                                                                <input
+                                                                                                  onChange={updateTokenValues}
+                                                                                                  onLoad={updateTokenValues}
+                                                                                                  id='number-of-tokens-to-buy'
+                                                                                                  type='number'
+                                                                                                  placeholder='1'
+                                                                                                ></input>
+                                                                                                <button
+                                                                                                  id='number-of-tokens-to-buy-btn'
+                                                                                                  onClick={buyTokens}
+                                                                                                >
+                                                                                                  {"ⅅ"}
+                                                                                                </button>
+                                                                                              </div>
+                                                                                              <div
+                                                                                                id='number-of-tokens-to-buy-values'
+                                                                                                className='text-white typed-text'
+                                                                                              >
+                                                                                                <p>
+                                                                                          
+                                                                                                  <span className='text-blue'></span>{" "}
+                                                                                                </p>
+                                                                                                <p>
+                                                                                               
+                                                                                                  <span className='text-blue'></span>{" "}
+                                                                                                </p>
+                                                                                                <p>
+                                                                                            
+                                                                                                  <span className='text-blue'></span>{" "}
+                                                                                                </p>
+                                                                                              </div>
+                                                                                  </div>
+                                                                                  </div>
+                                                                                  </div>
             </div>
-            <div className='col-span-2 row-span-1'>
-              <div className='card-bottom-wrapper'>
-                <div className='card-bottom'>
-                  <div className='text-lg'>
-                    <p className='pl-1 pb-1 text-grey'>
-                      Buy Donut Stones <span className='text-2xl'>⅊</span>
-                    </p>
-                    <p className='text-white pb-2'>
-                      (Requires a <span className='text-orange'>Metamask</span>{" "}
-                      connection)
-                    </p>
-                  </div>
-                  <div>
-                    <input
-                      onChange={updateTokenValues}
-                      onLoad={updateTokenValues}
-                      id='number-of-tokens-to-buy'
-                      type='number'
-                      placeholder='1'
-                      className='input shadow-lg rounded-r-none text-grey'
-                    ></input>
-                    <button
-                      id='number-of-tokens-to-buy-btn'
-                      onClick={buyTokens}
-                      className='absolute shadow-lg rounded-l-none btn'
-                    >
-                      {"=>"}
-                    </button>
-                  </div>
-                  <div
-                    id='number-of-tokens-to-buy-values'
-                    className='pt-3 text-xl text-white typed-text'
-                  >
-                    <p>
-                      {" "}
-                      <span className='text-blue'></span>{" "}
-                    </p>
-                    <p>
-                      {" "}
-                      <span className='text-blue'></span>{" "}
-                    </p>
-                    <p>
-                      {" "}
-                      <span className='text-blue'></span>{" "}
-                    </p>
-                  </div>
+            {/* Side column */}
+            <div className="col-xs-2 ds-side-column">
+                <div className="ds-vertical-line">
+                  
                 </div>
-              </div>
+                <div className="ds-align-bottom">
+                  <div className="ds-img">
+                </div>
+                </div>
             </div>
           </div>
         </div>
-      </React.Fragment>
-    </React.Fragment>
   );
 };
 

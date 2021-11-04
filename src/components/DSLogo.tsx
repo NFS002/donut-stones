@@ -3,19 +3,9 @@ import React from "react";
 
 export default function DSLogo() {
   return (
-    <div className="ds-logo-wrapper">
-      <span className="ds-logo-letter-d">D</span>
-      <span className="ds-logo-letter-o">o</span>
-      <span className="ds-logo-letter-n">n</span>
-      <span className="ds-logo-letter-u">u</span>
-      <span className="ds-logo-letter-t">t</span>
-      <span className="ds-logo-space">&nbsp;</span>
-      <span className="ds-logo-letter-s">S</span>
-      <span className="ds-logo-letter-t">t</span>
-      <span className="ds-logo-letter-o">o</span>
-      <span className="ds-logo-letter-n">n</span>
-      <span className="ds-logo-letter-e">e</span>
-      <span className="ds-logo-letter-s">s</span>
+    <div className="ds-logo">
+      <span><span className="ds-logo-caps">D</span>onut&nbsp;</span>
+      <span><span className="ds-logo-caps">S</span>tones&nbsp;</span>
     </div>
   );
 }

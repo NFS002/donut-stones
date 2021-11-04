@@ -1,116 +1,116 @@
 /* ./src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-@layer components {
-  .main-card {
-    font-family: "Courier";
-    text-align: justify;
-    height: 65em;
-    background: #b9ccc7;
-  }
+.text-white {
+  color: #ffffff;
+}
 
-  #connect-btn:hover {
-    @apply text-orange;
-    border: 1px solid #000000;
-    @apply rounded;
-    cursor: pointer;
-  }
+.text-grey {
+  color: #6c6c6c;
+}
 
-  #account-info {
-    padding: 4px;
-    border: 1px solid #000000;
-    @apply rounded;
-  }
+.text-red {
+  color: #c90808;
+}
 
-  .text-white {
-    color: #ffffff;
-  }
+.text-orange {
+  color: #ed8a18;
+}
 
-  .text-grey {
-    color: #6c6c6c;
-  }
+.text-blue {
+  color: #1e90ff;
+}
 
-  .text-orange {
-    color: #ed8a18;
-  }
+.text-lg {
+  font-size: 120%;
+}
 
-  .text-blue {
-    color: #1e90ff;
-  }
+.text-xl {
+  font-size: 150%;
+}
 
-  .card-body .card-text {
-    padding-right: 1.25em;
-    padding-bottom: 2em;
-  }
-  .card-side {
-    border-left: 6px solid #ed8a18;
-  }
+.text-bold {
+  font-weight: bolder;
+}
 
-  .divider-vertical {
-    height: 100%;
-    background-color: #1e90ff;
-    width: 3px;
-  }
+.text-italic {
+  font-style: italic;
+}
 
-  .token-symbol {
-    letter-spacing: 5px;
-    font-style: italic;
-  }
-  .circular-progress-bar-parent-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-  .card-bottom-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-  .circular-progress-bar-wrapper {
-    width: 15em;
-    height: 15em;
-    display: inline-block;
-  }
-  .token-stats {
-    display: inline-block;
-  }
+.card-body .card-text {
+  padding-right: 1.25em;
+  padding-bottom: 2em;
+}
+.card-side {
+  border-left: 6px solid #ed8a18;
+}
 
-  #whitepaper-link {
-    @apply link;
-  }
+.divider-vertical {
+  height: 100%;
+  background-color: #1e90ff;
+  width: 3px;
+}
 
-  #whitepaper-link:hover {
-    @apply text-white;
-    @apply shadow-xl;
-  }
+.token-symbol {
+  letter-spacing: 5px;
+  font-style: italic;
+}
+.circular-progress-bar-parent-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.card-bottom-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
 
-  #etherscan-link:hover {
-    @apply text-white;
-  }
+.token-stats {
+  display: inline-block;
+}
 
-  #number-of-tokens-to-buy {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border-left: 1px solid #ffffff;
-    border-right: none;
-    font-size: 30px;
-    width: 200px;
-    background: linear-gradient(0deg, rgba(30, 144, 255, 1) 0%, rgba(255, 255, 255, 0) 13%);
-  }
+#connect-btn {
+  cursor: pointer;
+}
 
-  #number-of-tokens-to-buy-btn {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-left: none;
-    background: linear-gradient(0deg, rgba(30, 144, 255, 1) 0%, rgba(255, 255, 255, 0.3) 13%);
-    color: #1e90ff;
-  }
+#connect-btn:hover {
+  color: #ed8a18;
+}
 
-  #number-of-tokens-to-buy-btn:hover {
-    color: #ffffff;
-    background: linear-gradient(0deg, rgba(30, 144, 255, 1) 0%, rgba(255, 255, 255, 0.2) 13%);
-  }
+#whitepaper-link:hover {
+  cursor: pointer;
+}
+
+#etherscan-link:hover {
+  cursor: pointer;
+}
+
+#number-of-tokens-to-buy {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: none;
+  font-size: calc(5px + 2vmin);
+  width: 10vw;
+  padding: 5px;
+  background: linear-gradient(0deg, rgba(30, 144, 255, 1) 0%, rgba(255, 255, 255, 0) 13%);
+  border-bottom-left-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+}
+
+#number-of-tokens-to-buy-btn {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-left: none;
+  background: linear-gradient(0deg, rgba(30, 144, 255, 1) 0%, rgba(255, 255, 255, 0.3) 13%);
+  color: #1e90ff;
+  font-size: calc(4px + 2vmin);
+  border-bottom-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+#number-of-tokens-to-buy-btn:hover {
+  color: #ffffff;
+  background: linear-gradient(0deg, rgba(30, 144, 255, 1) 0%, rgba(255, 255, 255, 0.2) 13%);
 }

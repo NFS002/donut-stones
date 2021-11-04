@@ -1,0 +1,10 @@
+.blinked-text {
+  animation: blinker 500ms step-start infinite;
+  animation-iteration-count: 10;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

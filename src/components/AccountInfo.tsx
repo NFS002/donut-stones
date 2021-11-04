@@ -11,7 +11,7 @@ import { injected, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 
-import { Connector } from "./Connector"
+import Connector from "./Connector"
 
 
 import { Account } from "./Account";
@@ -61,7 +61,7 @@ export default function AccountInfo() {
   const activating = injected === activatingConnector;
   const connected = injected === connector;
   return (
-    <div id="account-info" className="mb-2 shadow-lg navbar rounded">
+    <div className="ds-account-info">
       <div className="flex-1 px-2 mx-2">
         <div className="flex flex-row w-full ml-4 mr-4">
             <Connector />
