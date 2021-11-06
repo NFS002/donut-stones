@@ -11,6 +11,7 @@ export type { AllowanceCrowdsale } from "./AllowanceCrowdsale";
 export type { Crowdsale } from "./Crowdsale";
 export type { DonutStone } from "./DonutStone";
 export type { DonutStoneCrowdsale } from "./DonutStoneCrowdsale";
+export type { Greeter } from "./Greeter";
 export type { TimedCrowdsale } from "./TimedCrowdsale";
 
 export { Ownable__factory } from "./factories/Ownable__factory";
@@ -23,4 +24,5 @@ export { AllowanceCrowdsale__factory } from "./factories/AllowanceCrowdsale__fac
 export { Crowdsale__factory } from "./factories/Crowdsale__factory";
 export { DonutStone__factory } from "./factories/DonutStone__factory";
 export { DonutStoneCrowdsale__factory } from "./factories/DonutStoneCrowdsale__factory";
+export { Greeter__factory } from "./factories/Greeter__factory";
 export { TimedCrowdsale__factory } from "./factories/TimedCrowdsale__factory";

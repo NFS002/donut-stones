@@ -53,6 +53,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.DonutStoneCrowdsale__factory>;
     getContractFactory(
+      name: "Greeter",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Greeter__factory>;
+    getContractFactory(
       name: "TimedCrowdsale",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.TimedCrowdsale__factory>;

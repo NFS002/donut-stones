@@ -10,7 +10,7 @@ import { injected, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 
 export default function Connector() {
-  const { connector, activate, deactivate, active, error } = useWeb3React<Web3Provider>();
+  const { connector, activate, deactivate, active, error, chainId } = useWeb3React<Web3Provider>();
 
   // handle logic to recognize the connector currently being activated
   const [activatingConnector, setActivatingConnector] = React.useState<any>();
@@ -19,7 +19,7 @@ export default function Connector() {
     if (error instanceof NoEthereumProviderError) {
       return "No Ethereum browser extension detected.";
     } else if (error instanceof UnsupportedChainIdError) {
-      return "You're connected to an unsupported network.";
+      return "Unsupported network, please use the rinkeby test network.";
     } else if ( error instanceof UserRejectedRequestErrorInjected || error instanceof UserRejectedRequestErrorWalletConnect ) {
       return "Please authorize this website to access your Ethereum account.";
     } else {
@@ -42,18 +42,26 @@ export default function Connector() {
 
   const activating = injected === activatingConnector;
   const connected = injected === connector;
+  const chainIdError = chainId != 4;
 
   return (
     <div className="ds-connector text-xl">
-      <div className="text-red">
-        {!!error && `🚫 ${getErrorMessage(error)}`}
-      </div>
-      {(connected && !Boolean(error)) && (
+      {!!error && (
+        <div className="text-red">
+          {`🦊 ${getErrorMessage(error)} 🚫`}
+        </div>
+      )}
+      {chainIdError && (
+        <div className="text-red">
+          🦊 Please connect to the rinkeby test network 🚫
+        </div>
+      )}
+      {(connected && !Boolean(error)) && !chainIdError && (
         <div className="text-xl text-orange">
             Connected 🦊 ✅
         </div>
         )}
-        {(!connected && !Boolean(error)) && (
+        {!connected && (
           <div id="connect-btn"
             onClick={() => {
               setActivatingConnector(injected);

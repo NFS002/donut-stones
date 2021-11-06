@@ -59,6 +59,30 @@ body {
   background-size: contain;
 }
 
+.ds-menu-buttons {
+  padding-top: 1vh;
+}
+
+.ds-menu-buttons button {
+  font-size: 1.5vw;
+  border-radius: 1px;
+  border: 3px solid #ffffff;
+  background: none;
+}
+
+.ds-menu-buttons button:hover {
+  background-color: #1e90ff;
+  opacity: 0.6;
+}
+
+.ds-menu-buttons button:active {
+  color: #ed8a18;
+}
+
+.ds-menu-buttons button.active {
+  border-bottom-color: #ed8a18;
+}
+
 .ds-card-text {
   padding-bottom: 0.5em;
 }

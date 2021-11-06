@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useQuery } from "react-query";
-import { useWeb3React } from "@web3-react/core";
+import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
 import { toast } from "react-hot-toast";
 import { render } from "react-dom";
 import { ethers, utils, providers, BigNumber } from "ethers";
@@ -17,6 +17,7 @@ import AccountInfo from "./AccountInfo";
 import { CircularProgressbar, buildStyles } from "./circular-progressbar";
 import CardText from "./CardText";
 import DSLogo from "./DSLogo";
+import DSMenu from "./DSMenu"
 
 interface TokenInfoProps {
   crowdsaleAddress: string;
@@ -52,6 +53,7 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
   const [price, setPrice] = useState(BigNumber.from("500"));
   const [tokensSoldPerc, setTokensSoldPerc] = useState(BigNumber.from("3"))
   const [amount, setAmount] = useState(1);
+  const [menuState, setMenuState] = useState("home")
 
   var inputValue = 1;
   var ethPriceGBP = 2573.54;
@@ -125,9 +127,7 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
   /* Fetch Token Info */
   const fetchTokenInfo = async () => {
     logger.warn("fetchTokenInfo");
-    const provider = window.ethereum
-      ? new ethers.providers.Web3Provider(window.ethereum)
-      : new ethers.providers.JsonRpcProvider(providerUrl);
+    const provider = new ethers.providers.JsonRpcProvider(providerUrl);
     const tokenContract = new ethers.Contract(
       tokenAddress,
       DonutStoneArtifacts.abi,
@@ -170,7 +170,7 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
   const fetchCrowdsaleTokenInfo = () => {
     try {
       logger.warn("fetchCrowdsaleTokenInfo");
-      const provider = library || new ethers.providers.JsonRpcProvider(providerUrl);
+      const provider = new ethers.providers.JsonRpcProvider(providerUrl);
       const contract = new ethers.Contract(
         crowdsaleAddress,
         DonutStoneCrowdsaleArtifacts.abi,
@@ -192,12 +192,15 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
 
   /* Buy tokens */
   const buyTokens = async () => {
-    const provider = library || new providers.JsonRpcProvider(providerUrl);
-    const signer = provider.getSigner();
     try {
+      const provider = library || new providers.JsonRpcProvider(providerUrl);
+      const signer = provider.getSigner();
       if (!account) {
         await requestAccount();
         return;
+      }
+      if (chainId != 4) {
+        throw new UnsupportedChainIdError(chainId ||-1, [4])
       }
       const txParams = {
         to: crowdsaleAddress,
@@ -211,6 +214,7 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
         error: `Transaction failed. Check the console for details`,
       });
     } catch (error) {
+      toast.error('Transaction failed. Check the console for details')
       console.error(error);
     }
   };
@@ -244,7 +248,8 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
           <div className='ds-card-body row'>
           <div className="ds-main-column col-xs-10">
             <DSLogo />
-              <CardText />
+            <DSMenu menuState={menuState} setMenuState={setMenuState} />
+            <CardText menuState={menuState} />
                   <div className="row">
                   <div className="col-xs-6">
                   <div className='ds-progress-bar-wrapper'>
@@ -281,6 +286,9 @@ const TokenInfo = ( { crowdsaleAddress } : TokenInfoProps) => {
                                       <div className="ds-checkout">
                                       <p className='text-grey'>
                                                                                                   Buy Donut Stones
+                                                                                                </p>
+                                                                                                <p className="text-orange text-bold">
+                                                                                                🦊 Requires a metamask connection
                                                                                                 </p>
                                                                                               <div>
                                                                                                 <input

@@ -42,7 +42,7 @@ export function getLibrary(provider: any): Web3Provider {
 
 export default function AccountInfo() {
   const context = useWeb3React<Web3Provider>();
-  const { connector, activate, deactivate, active, error } = context;
+  const { chainId, connector, activate, deactivate, active, error } = useWeb3React<Web3Provider>();
 
   // handle logic to recognize the connector currently being activated
   const [activatingConnector, setActivatingConnector] = React.useState<any>();
