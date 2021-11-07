@@ -1,5 +1,6 @@
 /* Find and replace asset paths in html */
-async function beforeAdd() {
+
+/* async function beforeAdd() {
   const fs = require("fs");
   const fileName = "dist/index.html";
 
@@ -15,4 +16,4 @@ async function beforeAdd() {
   });
 }
 
-module.exports = beforeAdd;
+module.exports = beforeAdd; */
