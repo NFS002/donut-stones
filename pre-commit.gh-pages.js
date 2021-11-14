@@ -1,10 +1,10 @@
 /* Find and replace asset paths in html */
 
-/* async function beforeAdd() {
+async function beforeAdd() {
   const fs = require("fs");
   const fileName = "dist/index.html";
 
-  fs.readFile(fileName, "utf8", function (err, text) {
+  /* fs.readFile(fileName, "utf8", function (err, text) {
     if (err) {
       return console.log(err);
     }
@@ -13,7 +13,7 @@
     fs.writeFile(fileName, result, "utf8", function (err) {
       if (err) return console.log(err);
     });
-  });
+  }); */
 }
 
-module.exports = beforeAdd; */
+module.exports = beforeAdd;
